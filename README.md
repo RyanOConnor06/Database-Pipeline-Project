@@ -26,10 +26,6 @@ The schema consists of 7 tables across 4 entities:
 ### Pipeline Flow
 Player Game Log.csv ↓ Python Insertion Script ├── Resolve or insert: Season, Opponent, Player, Position ├── Insert: Game record ├── Insert: Player-game stats └── Insert: Player-game-position mapping ↓ MySQL Database (roconnor7)
 
- Database Pipeline Project
-
-A full-stack data pipeline that loads baseball player game logs from a CSV file into a normalized MySQL database. Built with Python and PyMySQL, the pipeline automatically resolves entity references (players, seasons, opponents, positions) and inserts per-game statistics in batches.
-
 ---
 
 ## Architecture

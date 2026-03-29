@@ -28,28 +28,6 @@ Player Game Log.csv ↓ Python Insertion Script ├── Resolve or inser
 
 ---
 
-## Architecture
-
-### Database Design (3rd Normal Form)
-
-The schema consists of 7 tables across 4 entities:
-
-| Table | Description |
-|---|---|
-| `project_player` | Unique players (auto-incrementing ID) |
-| `project_season` | Season years |
-| `project_opponent` | Opponent team names |
-| `project_game` | Individual games (date, result, opponent, season) |
-| `project_position` | Defensive positions |
-| `project_player_has_game` | Per-game batting stats for each player |
-| `project_player_game_has_position` | Position(s) played by each player per game |
-
-### Pipeline Flow
-
-Player Game Log.csv ↓ Python Insertion Script ├── Resolve or insert: Season, Opponent, Player, Position ├── Insert: Game record ├── Insert: Player-game stats └── Insert: Player-game-position mapping ↓ MySQL Database (roconnor7)
-
----
-
 ## Stats Tracked Per Game
 
 | Column | Description |

@@ -20,6 +20,8 @@ The schema consists of 7 tables across 4 entities:
 | `project_player_has_game` | Per-game batting stats for each player |
 | `project_player_game_has_position` | Position(s) played by each player per game |
 
+![Screenshot](img/Database ERD.png)
+
 ### Pipeline Flow
 Player Game Log.csv ↓ Python Insertion Script ├── Resolve or insert: Season, Opponent, Player, Position ├── Insert: Game record ├── Insert: Player-game stats └── Insert: Player-game-position mapping ↓ MySQL Database (roconnor7)
 

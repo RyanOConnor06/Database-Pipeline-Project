@@ -21,7 +21,7 @@ The schema consists of 7 tables across 4 entities:
 | `project_player_game_has_position` | Position(s) played by each player per game |
 
 ### Diagram
-![alt text](https://github.com/RyanOConnor06/Database-Pipeline-Project/blob/7f358c508564ca645c81b9dde2793eca3718cb4a/img/Database%20ERD.png) "diagram")
+![alt text](https://github.com/RyanOConnor06/Database-Pipeline-Project/blob/7f358c508564ca645c81b9dde2793eca3718cb4a/img/Database%20ERD.png)
 
 ### Pipeline Flow
 Player Game Log.csv ↓ Python Insertion Script ├── Resolve or insert: Season, Opponent, Player, Position ├── Insert: Game record ├── Insert: Player-game stats └── Insert: Player-game-position mapping ↓ MySQL Database (roconnor7)

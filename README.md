@@ -103,6 +103,6 @@ Project Structure
 └── README.md
 
 
-## License
+### License
 Copyright (c) 2026 Ryan Patrick O'Connor. All rights reserved.
 Non-commercial use permitted with required attribution. See LICENSE.md (https://claude.ai/claude-code-desktop/LICENSE.md) for full terms.

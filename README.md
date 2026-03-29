@@ -79,7 +79,7 @@ Player Game Log.csv ↓ Python Insertion Script ├── Resolve or inser
 
 ```bash
 pip install pymysql
-
+```
 
 ### Database Initialization
 
